@@ -10,7 +10,7 @@ xml="""<?xml version="1.0" encoding="utf-8"?>
   </groupings>
 </request>"""
 
-r = requests.post("https://yandex.com/search/xml?user=uid&key=&l10n=fr&filter=strict", data=xml)
+r = requests.post("https://yandex.com/search/xml?user=uid&key=mykey&l10n=fr&filter=strict", data=xml)
 print(r.text)
 
 #get
